@@ -8,11 +8,11 @@ int main()
 
     float valor_Comissao, Comissao;
 
-    /*solicitaÁ„o do valor da transaÁ„o ao usu·rio*/
-    printf("Informe o valor da transaÁ„o:\nR$ ");
+    /*solicita√ß√£o do valor da transa√ß√£o ao usu√°rio*/
+    printf("Informe o valor da transa√ß√£o:\nR$ ");
     scanf("%f", &valor_Comissao);
 
-    /*Calculando a comiss„o*/
+    /*Calculando uma determinada comiss√£o*/
     if(valor_Comissao <= 2500.00){
         Comissao = 30.00 + (valor_Comissao * 0.017);
     }if((valor_Comissao > 2500.00) && (valor_Comissao <= 6250.00)){
@@ -26,12 +26,12 @@ int main()
     }if(valor_Comissao > 500000.00){
         Comissao = 255.00 + (valor_Comissao * 0.009);
     }
-    //Padroniza o menor valor possÌvel da comiss„o
+    //Padroniza o menor valor poss√≠vel da comiss√£o
     if(Comissao < 39.00){
         Comissao = 39.00;
     }
 
-    printf("O valor da comiss„o È de:\nR$ %.2f", Comissao);
+    printf("O valor da comiss√£o √© de:\nR$ %.2f", Comissao);
 
     return 0;
 }
