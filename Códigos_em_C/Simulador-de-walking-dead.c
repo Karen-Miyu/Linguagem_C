@@ -1,16 +1,11 @@
-//Nome: Karen Mitiko Yuzawa RA: 2760482321007
-//Nome: Ana Carolina Cajuela de Brito RA: 2760482321035
-//Nome: Joselaine Maria Rocha de Lucca RA: 2760482321034
-//Nome: Samuel Lucas Valeriano de Oliveira RA: 2760482321018
 #include <stdio.h>
 #define MAX 50
 
-//Alunos:
-/*O programa a seguir tem como o objetivo simular um Apocalipse Zumbi por meio de matrizes, onde o n˙mero 1 È
-a representaÁ„o de humanos, o n˙mero 2 È a representaÁ„o de zumbis e o n˙mero 0 È um espaÁo inabitado (vazio).
-O programa dever· levar em conta as seguintes entrada do usu·rio e por meio de certas condiÁıes monitorar a
-simulaÁ„o da interaÁ„o entre os humanos e os zumbis, tendo por referÍncias a posiÁ„o  de vizinhanÁa  e os
-sobreviventes de cada espÈcie em cada um dos dias*/
+/*O programa a seguir tem como o objetivo simular um Apocalipse Zumbi por meio de matrizes, onde o n√∫mero 1 √©
+a representa√ß√£o de humanos, o n√∫mero 2 √© a representa√ß√£o de zumbis e o n√∫mero 0 √© um espa√ßo inabitado (vazio).
+O programa dever√° levar em conta as seguintes entrada do usu√°rio e por meio de certas condi√ß√µes monitorar a
+simula√ß√£o da intera√ß√£o entre os humanos e os zumbis, tendo por refer√™ncias a posi√ß√£o  de vizinhan√ßa  e os
+sobreviventes de cada esp√©cie em cada um dos dias*/
 
 int main() {
     int m, n, i;
@@ -65,7 +60,7 @@ int main() {
                             countH++;
                         }
                         if (mundo[t][j] == 2 && countH >= 2) {
-                            // Zumbi com dois ou mais vizinhos humanos, È morto
+                            // Zumbi com dois ou mais vizinhos humanos, √© morto
                             newMundo[t][j] = 0;
                         } else if (mundo[t][j] == 2 && countH == 0) {
                             // Zumbi sem vizinhos humanos, morre de fome e fica vazio
@@ -74,7 +69,7 @@ int main() {
                             // Vazio com exatamente dois vizinhos humanos, nasce humano
                             newMundo[t][j] = 1;
                         } else {
-                            // Permanece como est·
+                            // Permanece como est√°
                             newMundo[t][j] = mundo[t][j];
                         }
 
@@ -98,7 +93,7 @@ int main() {
         }
         printf("\n");
 
-        // Atualiza o mundo para o prÛximo dia
+        // Atualiza o mundo para o pr√≥ximo dia
         for (int t = 0; t < m; t++) {
             for (int j = 0; j < n; j++) {
                 mundo[t][j] = newMundo[t][j];
