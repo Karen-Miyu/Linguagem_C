@@ -1,11 +1,8 @@
 #include <stdio.h>
 #define MAX 50
 
-/*O programa a seguir tem como o objetivo simular um Apocalipse Zumbi por meio de matrizes, onde o número 1 é
-a representação de humanos, o número 2 é a representação de zumbis e o número 0 é um espaço inabitado (vazio).
-O programa deverá levar em conta as seguintes entrada do usuário e por meio de certas condições monitorar a
-simulação da interação entre os humanos e os zumbis, tendo por referências a posição  de vizinhança  e os
-sobreviventes de cada espécie em cada um dos dias*/
+/*O programa é um simulador de zumbi, utilizando matrizes para verificar os dias e os vizinhos se são humanos, ou zumbis.
+Este programa visa saber como será a população daqui i dias.*/
 
 int main() {
     int m, n, i;
