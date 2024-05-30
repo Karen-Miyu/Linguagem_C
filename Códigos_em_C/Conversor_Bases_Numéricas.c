@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <unistd.h> //para a utilização da função sleep
+#include <unistd.h> //para a utilizaÃ§Ã£o da funÃ§Ã£o sleep
 
 void conversorBinario (int n, int b[], int *i);
 
@@ -12,31 +12,31 @@ int main()
     int n, opcao, b[32], i;
 
     printf("============= Conversor =============\n");
-    printf("Digite um número inteiro:\n");
+    printf("Digite um nÃºmero inteiro:\n");
     scanf("%d", &n);
     system("cls");
 
-    printf("Selecione para qual tipo de conversão:\n");
+    printf("Selecione para qual tipo de conversÃ£o:\n");
     printf("1 - Para hexadecimal;\n");
     printf("2 - Para Octal;\n");
-    printf("3 - Para Binário;\n");
+    printf("3 - Para BinÃ¡rio;\n");
     printf("0 - Para sair.\n");
-    printf("\nOpção: ");
+    printf("\nOpÃ§Ã£o: ");
     scanf("%d", &opcao);
     getchar();
     system("cls");
 
     switch(opcao){
     case 1:
-        printf("=========== Conversão para Hexadecimais ===========\n");
+        printf("=========== ConversÃ£o para Hexadecimais ===========\n");
         printf("%d = %x\n\n", n, n);
         break;
     case 2:
-        printf("=========== Conversão para Octal ===========\n");
+        printf("=========== ConversÃ£o para Octal ===========\n");
         printf("%d = %o\n\n", n, n);
         break;
     case 3:
-        printf("=========== Conversão para Binário ===========\n");
+        printf("=========== ConversÃ£o para BinÃ¡rio ===========\n");
         printf("%d = ", n);
         conversorBinario(n, b, &i);
         for(int j = i-1; j >= 0; j--){
@@ -46,7 +46,7 @@ int main()
         break;
     case 0:
         for(int i = 0; i <= 2; i++){
-            printf("Você saiu do programa!");
+            printf("VocÃª saiu do programa!");
             fflush(stdout);
             sleep(1);
             printf("\r");
